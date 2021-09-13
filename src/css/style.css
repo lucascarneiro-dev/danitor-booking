@@ -1,0 +1,634 @@
+@font-face {
+  font-family: "robotoLight";
+  src: url("/src/fonts/Roboto-Light.ttf");
+}
+
+@font-face {
+  font-family: "robotoBlack";
+  src: url("/src/fonts/Roboto-Black.ttf");
+}
+h1,
+h2,
+h3 {
+  font-family: "robotoBlack";
+}
+
+body {
+  margin: 0;
+  background-color: #efeeda;
+  max-width: 100vw;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+#home {
+  height: 100vh;
+}
+header {
+  position: relative;
+  display: flex;
+  height: auto;
+}
+#logo {
+  width: 200px;
+  margin-left: 95px;
+  margin-top: 50px;
+}
+#phrase {
+  position: absolute;
+  margin-top: 15vh;
+  margin-left: 95px;
+  color: black;
+  font-size: 80px;
+  font-family: "robotoBlack";
+  margin-right: 30vw;
+  z-index: 2;
+}
+#videobg {
+  z-index: 1;
+}
+.bluesquare {
+  position: absolute;
+  background-color: rgb(44, 82, 157);
+  height: 100vh;
+  width: 27.5vw;
+  right: 0;
+}
+#aboutus {
+  width: 100vw;
+  height: 100vh;
+}
+
+#aboutus h1 {
+  font-size: 50px;
+  margin-left: 55vw;
+}
+
+#aboutus img {
+  object-fit: cover;
+  width: 40vw;
+  position: absolute;
+  margin-left: 95px;
+  margin-right: auto;
+  top: 120vh;
+}
+
+#aboutus p {
+  font-family: "robotoLight";
+  font-size: 30px;
+  margin-left: 55vw;
+  margin-right: 95px;
+  text-align: justify;
+}
+#rooms h2 {
+  font-size: 50px;
+  margin-left: 28px;
+  text-align: center;
+}
+#rooms p {
+  font-family: "robotoLight";
+  font-size: 30px;
+  text-align: center;
+  margin-top: -30px;
+}
+.rooms {
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  object-fit: cover;
+}
+.roomCards {
+  object-fit: cover;
+  display: block;
+  justify-content: center;
+  width: 20vw;
+  height: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+.arrowPrev {
+  position: absolute;
+  top: 23vh;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "robotoLight";
+  font-style: normal;
+  font-size: 50px;
+  z-index: 2;
+  color: rgb(178, 178, 175);
+  left: 34vw;
+  background-color: #efeeda;
+  border-radius: 30px;
+}
+.arrowNext {
+  position: absolute;
+  top: 23vh;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  font-family: "robotoLight";
+  font-style: normal;
+  font-size: 50px;
+  z-index: 2;
+  color: rgb(178, 178, 175);
+  right: 34vw;
+  background-color: #efeeda;
+  border-radius: 30px;
+}
+.roomPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 20vw;
+  height: 50vh;
+  border-radius: 30px;
+}
+.roomPic img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  object-fit: cover;
+  width: 20vw;
+  height: 50vh;
+  border-radius: 30px;
+}
+.roomPic h4 {
+  font-family: "robotoBlack";
+  position: relative;
+  display: block;
+  margin-top: 0;
+  font-size: 35px;
+  z-index: 1;
+  bottom: 50px;
+  text-align: center;
+}
+.cardDescription {
+  font-family: "robotoLight";
+  font-size: 13px;
+  text-justify: distribute-all-lines;
+}
+
+.blueButton {
+  font-family: robotoBlack;
+  background-color: rgb(44, 82, 157);
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10vw;
+  text-align: center;
+  line-height: 5vh;
+  border-radius: 10px;
+}
+
+#roomDetails {
+  position: fixed;
+  object-fit: cover;
+  top: 3vh;
+  right: 3vw;
+  border-radius: 30px;
+  border: 2px rgb(121, 121, 110) solid;
+  display: none;
+  justify-content: center;
+  width: 90vw;
+  height: 90vh;
+  background-color: #efeeda;
+  z-index: 3;
+}
+
+.detailsPic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7vh;
+  object-fit: cover;
+  width: 80vw;
+  height: 30vh;
+  border-radius: 30px;
+}
+
+.detailsPic img{
+  display: block;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top:;
+  object-fit: cover;
+  width: 80vw;
+  height: 30vh;
+  border-radius: 30px;
+}
+
+.arrowPrevDetails {
+  position: absolute;
+  top: 12vh;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "robotoLight";
+  font-style: normal;
+  font-size: 30px;
+  z-index: 2;
+  color: rgb(178, 178, 175);
+  left: 5vw;
+  background-color: #efeeda;
+  border-radius: 30px;
+}
+.arrowNextDetails {
+  position: absolute;
+  top: 12vh;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-family: "robotoLight";
+  font-style: normal;
+  font-size: 30px;
+  z-index: 2;
+  color: rgb(178, 178, 175);
+  right: 5vw;
+  background-color: #efeeda;
+  border-radius: 30px;
+}
+.details {
+  display: block;
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+#roomDetails h4 {
+  font-family: "robotoBlack";
+  position: relative;
+  display: block;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  font-size: 35px;
+  text-align: left;
+}
+#roomDetails p {
+  font-family: "robotoLight";
+  font-size: 20px;
+  text-align: justify;
+  margin-top: 0;
+}
+
+#closeModal {
+  font-family: robotoLight;
+  width: 40px;
+  text-align: center;
+  font-size: 30px;
+  border-radius: 10px;
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  z-index: 10;
+}
+
+#bookRoom{
+  margin-top: -5vh;
+  margin-left: 50vw;
+}
+
+#contact {
+  display: flex;
+  margin-top: 5vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: rgb(44, 82, 157);
+  padding-top: 1vh;
+}
+#contact p {
+  font-family: "robotoLight";
+  font-size: 20px;
+  margin-left: 28px;
+}
+
+.contact {
+  height: 20vh;
+  align-content: center;
+}
+.contact img {
+  display: block;
+  height: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+.contact h6 {
+  font-family: "robotoBlack";
+  font-size: 20px;
+  margin-top: 0;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  body {
+    max-width: 100vw;
+    margin: 0;
+    background-color: #efeeda;
+  }
+
+  .bluesquare {
+    display: none;
+  }
+  #home {
+    height: 100vh;
+  }
+  header {
+    position: relative;
+    display: flex;
+    height: auto;
+    justify-content: center;
+  }
+  #logo {
+    width: 79px;
+    margin-top: 20px;
+    margin-left: 0px;
+  }
+  #phrase {
+    margin-top: 50vh;
+    margin-left: 28px;
+    color: #efeeda;
+    font-size: 35px;
+    font-family: "robotoBlack";
+    margin-right: 60px;
+  }
+
+  #aboutus {
+    width: 100vw;
+    height: 70vh;
+  }
+
+  #aboutus h1 {
+    font-size: 36px;
+    margin-left: 28px;
+  }
+
+  #aboutus img {
+    object-fit: cover;
+    width: 80vw;
+    position: relative;
+    display: block;
+    margin-left: auto;
+    top: 0;
+    margin-right: auto;
+  }
+
+  #aboutus p {
+    font-family: "robotoLight";
+    font-size: 18px;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+
+  #rooms h2 {
+    font-size: 36px;
+    margin-left: 28px;
+    text-align: left;
+  }
+  #rooms p {
+    font-family: "robotoLight";
+    font-size: 25px;
+    margin-left: 28px;
+    margin-top: 0px;
+    text-align: left;
+  }
+  .rooms {
+    position: relative;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    object-fit: cover;
+  }
+  .roomCards {
+    object-fit: cover;
+    display: block;
+    justify-content: center;
+    width: 100vw;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 28px;
+    padding-right: 28px;
+  }
+  .arrowPrev {
+    position: absolute;
+    top: 23vh;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "robotoLight";
+    font-style: normal;
+    font-size: 30px;
+    z-index: 2;
+    color: rgb(178, 178, 175);
+    left: 24vw;
+    background-color: #efeeda;
+    border-radius: 30px;
+  }
+  .arrowNext {
+    position: absolute;
+    top: 23vh;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "robotoLight";
+    font-style: normal;
+    font-size: 30px;
+    z-index: 2;
+    color: rgb(121, 121, 110);
+    right: 24vw;
+    background-color: #efeeda;
+    border-radius: 30px;
+  }
+  .roomPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 30px;
+  }
+  .roomPic img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: cover;
+    width: 60vw;
+    height: 50vh;
+    border-radius: 30px;
+  }
+  .roomPic h4 {
+    font-family: "robotoBlack";
+    position: relative;
+    display: block;
+    margin-top: 0;
+    font-size: 35px;
+    z-index: 1;
+    bottom: 50px;
+    text-align: center;
+  }
+  .cardDescription {
+    font-family: "robotoLight";
+    font-size: 20px;
+    text-align: justify;
+    text-justify: distribute-all-lines;
+  }
+
+  .blueButton {
+    font-family: robotoBlack;
+    background-color: rgb(44, 82, 157);
+    font-size: 20px;
+    margin-left: 30VW;
+    width: 30vw;
+    text-align: center;
+    line-height: 5vh;
+    border-radius: 10px;
+  }
+
+  #roomDetails {
+    position: fixed;
+    object-fit: cover;
+    top: 3vh;
+    right: 3vw;
+    border-radius: 30px;
+    border: 2px rgb(121, 121, 110) solid;
+    display: none;
+    justify-content: center;
+    width: 94vw;
+    height: 94vh;
+    background-color: #efeeda;
+    z-index: 3;
+  }
+
+  .detailsPic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7vh;
+    object-fit: cover;
+    width: 80vw;
+    height: auto;
+    border-radius: 30px;
+  }
+
+
+  .arrowPrevDetails {
+    position: absolute;
+    top: 12vh;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "robotoLight";
+    font-style: normal;
+    font-size: 30px;
+    z-index: 2;
+    color: rgb(178, 178, 175);
+    left: 5vw;
+    background-color: #efeeda;
+    border-radius: 30px;
+  }
+  .arrowNextDetails {
+    position: absolute;
+    top: 12vh;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    font-family: "robotoLight";
+    font-style: normal;
+    font-size: 30px;
+    z-index: 2;
+    color: rgb(178, 178, 175);
+    right: 5vw;
+    background-color: #efeeda;
+    border-radius: 30px;
+  }
+  .details {
+    display: block;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #roomDetails h4 {
+    font-family: "robotoBlack";
+    position: relative;
+    display: block;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    font-size: 35px;
+    text-align: left;
+  }
+  #roomDetails p {
+    font-family: "robotoLight";
+    font-size: 20px;
+    text-align: justify;
+    margin-top: 0;
+  }
+
+  #closeModal {
+    font-family: robotoLight;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border-radius: 10px;
+    right: 10px;
+    top: 10px;
+    position: absolute;
+    z-index: 10;
+  }
+
+  #bookRoom{
+    margin-top: -5vh;
+    margin-left: 50vw;
+  }
+  
+
+  #contact {
+    display: flex;
+    margin-top: 5vh;
+    width: 100vw;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    background-color: rgb(44, 82, 157);
+    padding-top: 1vh;
+  }
+  #contact p {
+    font-family: "robotoLight";
+    font-size: 20px;
+    margin-left: 28px;
+  }
+
+  .contact {
+    height: 20vh;
+    align-content: center;
+  }
+  .contact img {
+    display: block;
+    height: 15vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-left: 5vw;
+  }
+  .contact h6 {
+    font-family: "robotoBlack";
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
+  }
+}

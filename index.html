@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danitor Crash Pad</title>
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/src/javascript/slick-1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="/src/javascript/slick-1.8.1/slick/slick-theme.css"
+    />
+  </head>
+  <body>
+    <section id="home">
+      <div class="bluesquare"></div>
+      <video muted autoplay id="videoBg" src=""></video>
+      <header>
+        <img src="./src/img/logo.png" alt="Danitor" id="logo" />
+      </header>
+      <p id="phrase">Your home when <br />you are away <br />from yours</p>
+    </section>
+    <section id="aboutus">
+      <h1>About Danitor</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+      <img src="/src/img/bed.png" alt="Bedroom" />
+    </section>
+    <section id="rooms">
+      <h2 >Book a room</h2>
+      <p>Find the best for your needs</p>
+      <div class="rooms">
+        <div class="roomCards">
+          <div class="roomPic">
+            <img src="./src/img/rooms/roomsample.png" alt="Room01" />
+            <h4>Room 1</h4>
+          </div>
+          <h6 class="cardDescription">
+            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </h6>
+          <div class="blueButton" onclick="displayBlock('roomDetails')">details</div>
+        </div>
+        <div class="roomCards" >
+          <div class="roomPic" >
+            <img src="./src/img/rooms/roomsample.png" alt="Room01" />
+            <h4>Room 2</h4>
+          </div>
+          <h6 class="cardDescription" >
+            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </h6>
+          <div class="blueButton" onclick="displayBlock('roomDetails')">details</div>
+        </div>
+        <div class="roomCards">
+          <div class="roomPic">
+            <img src="./src/img/rooms/roomsample.png" alt="Room01" />
+            <h4>Room 3</h4>
+          </div>
+          <h6 class="cardDescription">
+            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </h6>
+          <div class="blueButton" onclick="displayBlock('roomDetails')">details</div>
+        </div>
+        <div class="roomCards">
+          <div class="roomPic">
+            <img src="./src/img/rooms/roomsample.png" alt="Room01" />
+            <h4>Room 4</h4>
+          </div>
+          <h6 class="cardDescription">
+            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </h6>
+          <div class="blueButton" onclick="displayBlock('roomDetails')">details</div>
+        </div>
+        <div class="roomCards">
+          <div class="roomPic">
+            <img src="./src/img/rooms/roomsample.png" alt="Room01" />
+            <h4>Room 5</h4>
+          </div>
+          <h6 class="cardDescription">
+            orem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </h6>
+          <div class="blueButton" onclick="displayBlock('roomDetails')">details</div>
+        </div>
+      </div>
+    </section>
+    <div id="roomDetails">
+      <div id="closeModal">X</div>
+      <div class="detailsPic">
+        <img src="./src/img/rooms/roomsample.png" alt="Room Picture" />
+        <img src="./src/img/rooms/roomsample.png" alt="Room Picture" />
+        <img src="./src/img/rooms/roomsample.png" alt="Room Picture" />
+        <img src="./src/img/rooms/roomsample.png" alt="Room Picture" />
+        <img src="./src/img/rooms/roomsample.png" alt="Room Picture" />
+        <img src="./src/img/rooms/roomsample.png" alt="Room Picture" />
+      </div>
+      <div class="details">
+        <h4>Room</h4>
+        <p>
+          orem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+          veniam.
+        </p>
+        <h4>Ammenities</h4>
+        <p>
+          Air Conditioning
+          <br>Security system
+          <br>Garage
+        </p>
+      <a target="_blank" href="https://crashpad411.com/listing/3417"><div id="bookRoom" class="blueButton" >book room</div></a>
+
+      </div>
+    </div>
+    <section id="contact">
+      <div class="contact">
+        <img src="/src/img/call.png" alt="Phone" />
+        <h6>Call</h6>
+      </div>
+      <div class="contact">
+        <img src="/src/img/email.png" alt="Email" />
+        <h6>Send e-mail</h6>
+      </div>
+      <p>
+        Adress Line, adress line - 178
+        <br />telephone +1(00)000-000-000 <br />danitorhostel@danitor.com
+      </p>
+
+    </section>
+
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="/src/javascript/slick-1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/src/javascript/script.js"></script>
+  </body>
+</html>
