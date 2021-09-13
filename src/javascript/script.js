@@ -71,7 +71,7 @@ if (screenWidth < 801) {
 var Player = document.getElementById("videoBg");
 var Logo = document.getElementById("logo");
 if (screenWidth < 801) {
-  var nextsrc = ["/src/video/bgMobile01.mp4", "/src/video/bgMobile00.mp4"];
+  var nextsrc = ["./src/video/bgMobile01.mp4", "./src/video/bgMobile00.mp4"];
   Player.style.position = "absolute";
   Player.style.objectFit = "cover";
   Player.style.zIndex = "-1";
@@ -97,17 +97,6 @@ if (screenWidth < 801) {
   // Logo.src="./src/img/logo-blue.png"
 }
 
-if (screenWidth < 801) {
-  Player.style.property = `
-    position: absolute; z-index: -1; width: 100vw;height: 100vh; object-fit: cover`;
-} else {
-  Player.style.property = `
-position: absolute;
-z-index: -1;
-width: 100vw;
-height: 100vh;
-object-fit: cover`;
-}
 
 var elm = 0;
 

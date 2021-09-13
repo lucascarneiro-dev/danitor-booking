@@ -1,11 +1,11 @@
 @font-face {
   font-family: "robotoLight";
-  src: url("/src/fonts/Roboto-Light.ttf");
+  src: url("./src/fonts/Roboto-Light.ttf");
 }
 
 @font-face {
   font-family: "robotoBlack";
-  src: url("/src/fonts/Roboto-Black.ttf");
+  src: url("./src/fonts/Roboto-Black.ttf");
 }
 h1,
 h2,
@@ -221,7 +221,6 @@ header {
   display: block;
   margin-left: 10px;
   margin-right: 10px;
-  margin-top:;
   object-fit: cover;
   width: 80vw;
   height: 30vh;
