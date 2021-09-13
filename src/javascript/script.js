@@ -71,7 +71,7 @@ if (screenWidth < 801) {
 var Player = document.getElementById("videoBg");
 var Logo = document.getElementById("logo");
 if (screenWidth < 801) {
-  var nextsrc = ["./src/video/bgMobile01.mp4", "./src/video/bgMobile00.mp4"];
+  var nextsrc = ["https://github.com/lucascarneiro-dev/danitor-booking/raw/main/src/video/bgMobile01.mp4", "https://github.com/lucascarneiro-dev/danitor-booking/raw/main/src/video/bgMobile00.mp4"];
   Player.style.position = "absolute";
   Player.style.objectFit = "cover";
   Player.style.zIndex = "-1";
@@ -80,9 +80,9 @@ if (screenWidth < 801) {
   // Logo.src="./src/img/logo-white.png"
 } else {
   var nextsrc = [
-    "/src/video/bgPc (1).mp4",
-    "/src/video/bgPc (2).mp4",
-    "/src/video/bgPc (3).mp4",
+    "https://github.com/lucascarneiro-dev/danitor-booking/raw/main/src/video/bgPc%20(1).mp4",
+    "https://github.com/lucascarneiro-dev/danitor-booking/raw/main/src/video/bgPc%20(2).mp4",
+    "https://github.com/lucascarneiro-dev/danitor-booking/raw/main/src/video/bgPc%20(3).mp4"
   ];
   Player.style.position = "absolute";
   Player.style.objectFit = "cover";

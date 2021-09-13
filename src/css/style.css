@@ -1,11 +1,11 @@
 @font-face {
   font-family: "robotoLight";
-  src: url("./src/fonts/Roboto-Light.ttf");
+  src: url("https://github.com/lucascarneiro-dev/danitor-booking/raw/main/src/fonts/Roboto-Light.ttf");
 }
 
 @font-face {
   font-family: "robotoBlack";
-  src: url("./src/fonts/Roboto-Black.ttf");
+  src: url("https://github.com/lucascarneiro-dev/danitor-booking/raw/main/src/fonts/Roboto-Black.ttf");
 }
 h1,
 h2,
