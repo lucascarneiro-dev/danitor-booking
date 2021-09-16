@@ -1,9 +1,6 @@
 let screenWidth = window.screen.width;
 var closeModal = document.getElementById("closeModal");
 var roomCards = document.getElementsByClassName("roomCards");
-responsive()
-
-window.addEventListener("resize",responsive())
 
 closeModal.addEventListener("click",function(){displayNone("roomDetails")});
 
@@ -23,9 +20,7 @@ window.onclick = function(event) {
   };
 };
 
-
-function responsive() {
-  if (screenWidth < 801) {
+if (screenWidth < 801) {
   $(document).ready(function () {
     $(".rooms").slick({
       slidesToShow: 1,
@@ -82,7 +77,7 @@ if (screenWidth < 801) {
   Player.style.zIndex = "-1";
   Player.style.width = "100vw";
   Player.style.height = "100vh";
-  // Logo.src="./src/img/logo-white.png"
+  Logo.src="./src/img/logo-white.png"
 } else {
   var nextsrc = [
     "https://github.com/lucascarneiro-dev/danitor-booking/raw/main/src/video/bgPc%20(1).mp4",
@@ -99,8 +94,7 @@ if (screenWidth < 801) {
   Player.style.marginRight = "10vw";
   Player.style.top = "50%";
   Player.style.marginTop = "-17.5vw";
-  // Logo.src="./src/img/logo-blue.png"
-}
+  Logo.src="./src/img/logo-blue.png"
 }
 
 
