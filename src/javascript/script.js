@@ -1,6 +1,9 @@
 let screenWidth = window.screen.width;
 var closeModal = document.getElementById("closeModal");
 var roomCards = document.getElementsByClassName("roomCards");
+responsive()
+
+window.addEventListener("resize",responsive())
 
 closeModal.addEventListener("click",function(){displayNone("roomDetails")});
 
@@ -12,15 +15,17 @@ function displayBlock(id) {
   document.getElementById(id).style.display = "block";
 };
 
-// window.onclick = function(event) {
-//   if (event.target == roomModal) {
-//     roomModal.style.display = "block";
-//   }else{
-//     roomModal.style.display = "none";
-//   };
-// };
+window.onclick = function(event) {
+  if (event.target == document.getElementById("roomDetails") ) {
+    return;
+  }else{
+    closeModal.addEventListener("click",function(){displayNone("roomDetails")});
+  };
+};
 
-if (screenWidth < 801) {
+
+function responsive() {
+  if (screenWidth < 801) {
   $(document).ready(function () {
     $(".rooms").slick({
       slidesToShow: 1,
@@ -95,6 +100,7 @@ if (screenWidth < 801) {
   Player.style.top = "50%";
   Player.style.marginTop = "-17.5vw";
   // Logo.src="./src/img/logo-blue.png"
+}
 }
 
 
